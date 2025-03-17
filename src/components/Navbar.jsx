@@ -8,9 +8,6 @@ export default function Navbar() {
     const windowListner = addEventListener("scroll", () => {
       window.scrollY > 80 ? setToggle(true) : setToggle(false);
     });
-    return () => {
-      windowListner.remove();
-    };
   }, []);
 
   return (
