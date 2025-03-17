@@ -6,7 +6,8 @@ export default function Navbar() {
   const [toggle, setToggle] = useState(false);
   useEffect(() => {
     const windowListener = () => {
-      window.scrollY > 80 ? setToggle(true) : setToggle(false);
+      console.log(window.scrollY);
+      window.scrollY > 10 ? setToggle(true) : setToggle(false);
     };
 
     window.addEventListener("scroll", windowListener);

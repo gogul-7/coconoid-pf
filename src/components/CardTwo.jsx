@@ -12,7 +12,7 @@ export default function CardTwo({ title, desc, image }) {
         alt="no-img"
         className="rounded-[30px] rounded-bl-[200px]"
       />
-      <div className="w-[150px] h-[150px] bg-[#B8E900] rounded-[50%] flex items-center justify-center absolute bottom-[10px] left-[10px]">
+      <div className="w-[150px] h-[150px] bg-[#B8E900] rounded-[50%] flex items-center justify-center absolute bottom-[10px] left-[10px] hover:cursor-pointer">
         <Icon
           icon="line-md:arrow-up"
           width="100"
