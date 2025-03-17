@@ -10,7 +10,7 @@ export default function CardOne({ title, desc, image }) {
             icon="line-md:arrow-up"
             width="24"
             height="24"
-            style="color: #fff"
+            color="white"
             className="rotate-45"
           />
         </div>

@@ -16,7 +16,7 @@ export default function CardTwo({ title, desc, image }) {
         <Icon
           icon="line-md:arrow-up"
           width="100"
-          style="color: #fff"
+          color="white"
           className="rotate-45"
         />
       </div>
