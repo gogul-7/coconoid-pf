@@ -5,9 +5,15 @@ import React, { useEffect, useState } from "react";
 export default function Navbar() {
   const [toggle, setToggle] = useState(false);
   useEffect(() => {
-    const windowListner = addEventListener("scroll", () => {
+    const windowListener = () => {
       window.scrollY > 80 ? setToggle(true) : setToggle(false);
-    });
+    };
+
+    window.addEventListener("scroll", windowListener);
+
+    return () => {
+      window.removeEventListener("scroll", windowListener);
+    };
   }, []);
 
   return (
